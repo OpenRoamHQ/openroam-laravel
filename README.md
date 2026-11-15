@@ -5,14 +5,21 @@ container, and a middleware that checks the signature of OpenRoam webhooks. Need
 
 ## Install
 
-OpenRoam is still in release candidates, so install both packages by their exact version (a plain install does not pick them up):
+OpenRoam is still in release candidates, so install by the exact version (a plain install does not pick it up). This package has the same
+version as the OpenRoam SDK it uses, and requires exactly that SDK version, so one command installs both:
 
 ```bash
-composer require openroam/laravel:0.1.0-rc.1 openroam/sdk:0.1.0-rc.6
+composer require openroam/laravel:0.1.0-rc.6 openroam/sdk:0.1.0-rc.6
 php artisan vendor:publish --tag=openroam-config   # optional: copies config/openroam.php
 ```
 
+Composer needs the SDK named too while it is a release candidate (its stability is only inherited from your own requirements).
 Laravel finds the package by itself; there is nothing to register.
+
+## Versions
+
+`openroam/laravel` X.Y.Z always goes with `openroam/sdk` X.Y.Z: same number, released together. Once the SDK is stable, this package
+requires `openroam/sdk` `^X.Y.Z` and a plain `composer require openroam/laravel` is enough.
 
 ## Configure
 
