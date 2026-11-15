@@ -22,8 +22,8 @@ Laravel finds the package by itself; there is nothing to register.
 
 ## Versions
 
-`openroam/laravel` X.Y.Z always goes with `openroam/sdk` X.Y.Z: same number, released together. Once the SDK is stable, this package
-requires `openroam/sdk` `^X.Y.Z` and a plain `composer require openroam/laravel` is enough.
+`openroam/laravel` X.Y.Z always goes with `openroam/sdk` X.Y.Z: the same number, released together, with no exceptions. This package
+requires exactly that SDK version, so you can never end up with a mix. A fix to this package is released as the next version of both.
 
 ## Configure
 
