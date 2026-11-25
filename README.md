@@ -29,9 +29,10 @@ requires exactly that SDK version, so you can never end up with a mix. A fix to 
 
 ```dotenv
 OPENROAM_API_KEY=your-key
-OPENROAM_ENVIRONMENT=sandbox        # or production (the default)
+OPENROAM_ENVIRONMENT=sandbox        # or production (the default); the only named environments
 OPENROAM_WEBHOOK_SECRET=your-secret # only if you receive webhooks
 # OPENROAM_MAX_RETRIES=3            # default 0: no retries
+# OPENROAM_BASE_URL=                # unnamed host override only; leave unset to use the environment above
 ```
 
 ## Use the client
