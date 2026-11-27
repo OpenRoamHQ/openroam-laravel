@@ -15,7 +15,7 @@ This package version always matches the OpenRoam SDK it depends on. Install a re
 
 <!-- release:install -->
 ```bash
-composer require openroam/laravel:0.1.0-rc.6 openroam/sdk:0.1.0-rc.6
+composer require openroam/laravel:0.1.0-rc.7 openroam/sdk:0.1.0-rc.7
 ```
 <!-- /release:install -->
 
